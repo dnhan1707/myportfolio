@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+html, body {
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
+}
+/* Fade in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+@keyframes fadeIn {
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
 }
+
+/* Fade-in up animation */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1.5s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide-in from left */
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: slideInLeft 1.5s forwards;
+}
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide-in up animation */
+.slide-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideInUp 1.5s forwards;
+}
+
+@keyframes slideInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scale-up on hover */
+.scale-up-on-hover {
+  transition: transform 0.3s ease;
+}
+
+.scale-up-on-hover:hover {
+  transform: scale(1.05);
+}
+
+/* Style for the main description text */
+.des h1 {
+  color: #FFFFFF; /* Standard white text */
+  font-family: 'Arial', sans-serif; /* Clean and readable */
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.name {
+  font-family: 'Lora', serif; /* Elegant, refined font */
+  /* font-size: 1.6em; */
+  font-style: italic;
+}
+
+.highlight {
+  color: #DA70D6; /* Electric purple */
+  font-family: 'Lora', serif; /* Elegant, refined font */
+  font-size: 1.6em; /* Larger to show importance */
+  font-style: italic;
+}
+
