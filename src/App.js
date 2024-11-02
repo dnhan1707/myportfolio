@@ -5,17 +5,17 @@ import headstarter from './headstarterAI.png';
 import journeyAi from './journeyAi.png'
 import taskflowAi from './taskflowAi.png'
 import './App.css';
-import ContactForm from './ContactForm';
+import me from './me.jpg'
 
 function App() {
 
   return (
     <div className="App">
       <div className='container flex flex-col'>
-        <div className='header w-screen bg-black text-white px-32 pt-10'>
-          <div className='header-container flex flex-row gap-10 items-end justify-end'>
+        <div className='header w-screen bg-black text-white px-32 md:px-32 pt-10'>
+          <div className='header-container flex flex-row gap-4 md:gap-10 items-end justify-end'>
             <div className='resume'>
-                <a href="https://drive.google.com/file/d/14E1RlgIrPawF8Q7BqL6s0dJi2eu3cTwV/view?usp=sharing">Resume</a>
+                <a href="https://drive.google.com/file/d/14HEcTBbT1R2hPD4WusaWk6SjFi4j41tz/view?usp=sharing">Resume</a>
             </div>
 
             <div className='contact'>
@@ -27,7 +27,7 @@ function App() {
 
 
         {/* First Section */}
-        <div className='intro-page bg-black w-screen h-screen text-white px-20 pt-10 pb-0 flex fade-in'>
+        <div className='intro-page bg-black w-full h-screen text-white px-6 md:px-20 pt-10 pb-0 flex flex-col md:flex-row fade-in'>
           
           {/* Name and Image */}
           <div className='name-and-pic w-2/3'>
@@ -165,46 +165,32 @@ function App() {
 
         {/* Contact */}
         <div id="contact" className='contact w-screen bg-black text-white border-t border-t-slate-300'>
-          <div className="contact-container flex flex-col justify-center items-center">
-            <h1 className="text-4xl font-bold text-center pb-8 pt-10">Contact</h1>
-            <div className='contact-section flex flex-row w-3/4'>
-              <ContactForm></ContactForm>
+            <div className='contact-container flex flex-row items-center justify-center p-20'>
+                <div className='get-in-touch flex flex-col items-center w-1/2'>
+                    <h1 className='text-8xl font-bold pb-14 fade-in-up'>Hire me !</h1>
+                    <div className='contact-des text-xl pb-10'>
+                      <a href="mailto:dnhan1707@gmail.com" title="Send me an email" className="hover:underline">dnhan1707@gmail.com</a>
+                    </div>
+                    <div className='social-link mt-8'>
+                        <ul className="social-media-list flex justify-center space-x-5">
+                            <li>
+                                <a href="https://www.linkedin.com/in/nhan-tri-danh-29b922223/" target="_blank" className="contact-icon text-gray-400 hover:text-white fa-2x">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/dnhan1707" target="_blank" className="contact-icon text-gray-400 hover:text-white fa-2x">
+                                    <i class="fa-brands fa-github"></i>                    
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-
-              {/* Direct Contact Information */}
-              <div className="direct-contact-container text-center mt-10 w-1/2">
-                
-                {/* Contact List */}
-                <ul className="contact-list space-y-4">
-                  <li className="list-item text-lg">
-                    <i className="fa fa-envelope fa-2x pr-2"></i>
-                    <a href="mailto:dnhan1707@gmail.com" title="Send me an email" className="hover:underline">dnhan1707@gmail.com</a>
-                  </li>
-                </ul>
-
-                <hr className="my-5 border-gray-600" />
-
-                {/* Social Media Links */}
-                <ul className="social-media-list flex justify-center space-x-5">
-                  <li>
-                    <a href="https://www.linkedin.com/in/nhan-tri-danh-29b922223/" target="_blank" className="contact-icon text-gray-400 hover:text-white fa-2x">
-                      <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/dnhan1707" target="_blank" className="contact-icon text-gray-400 hover:text-white fa-2x">
-                      <i class="fa-brands fa-github"></i>                    
-                    </a>
-                  </li>
-                </ul>
-
-                <hr className="my-5 border-gray-600" />
-
-              </div>
+                <div className='my-image w-1/2'>
+                    <img src={me} className='fade-in-image scale-up-on-hover' alt="My Image"/>
+                </div>
             </div>
-
-          </div>
-
         </div>
 
 
