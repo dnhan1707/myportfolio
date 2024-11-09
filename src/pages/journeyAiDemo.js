@@ -21,6 +21,7 @@ function JourneyAIDemo() {
                             <h1>JourneyAI</h1>
                         </div>
                     </div>
+                    <h1>-{'> '}View on <span className="highlight hover:text-blue-500 hover:underline transition duration-300"><a href="https://github.com/dnhan1707/journey-ai-product-version" target="_blank" rel="noopener noreferrer">github</a></span></h1>
                     <h1>-{'> '}Is it live? Yes, it is. Click <span className="highlight hover:text-blue-500 hover:underline transition duration-300"><a href="https://journey-ai.dev" target="_blank" rel="noopener noreferrer">here</a></span></h1>
                     <h1 className="pb-5">-{'> '}Try the <span className="highlight">demo</span> below here, start with the Login</h1>
                     <div className="px-4 md:px-20 py-20 rounded-lg" style={{ position: 'relative', paddingBottom: 'calc(50.520833333333336% + 41px)', height: 0, width: '100%' }}>
