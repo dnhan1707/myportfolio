@@ -3,7 +3,7 @@ function Header(){
         <div className='header w-full bg-black text-white px-32 md:px-32 pt-10'>
             <div className='header-container flex flex-row gap-4 md:gap-10 items-end justify-end'>
             <div className='resume'>
-                <a href="https://drive.google.com/file/d/14HEcTBbT1R2hPD4WusaWk6SjFi4j41tz/view?usp=sharing">Resume</a>
+                <a href="https://docs.google.com/document/d/1mFIFTfVFerzVRF0_SC2MblSrJ5gBSl57/edit?usp=sharing&ouid=112158056507408381785&rtpof=true&sd=true">Resume</a>
             </div>
 
             <div className='contact'>
