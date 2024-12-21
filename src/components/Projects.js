@@ -14,9 +14,9 @@ function Projects() {
                                 <img src={diagarrow} alt="Arrow" className="w-4 md:w-auto"></img>
                                 <a 
                                     className='text-white text-sm md:text-base hover:text-blue-500 hover:underline transition duration-300' 
-                                    href='https://github.com/dnhan1707/journey-ai-product-version'
+                                    href='https://www.journey-ai.dev/'
                                 >
-                                    View on Github
+                                    Try it now!
                                 </a>
                             </div>
 
@@ -26,11 +26,10 @@ function Projects() {
                         </div>
                         <div className='experience-3-des flex flex-row pt-5'>
                             <div className='pl-2 md:pl-5'>
-                                <h1 className="text-2xl md:text-3xl text-white font-bold pt-1">Journey AI</h1>
+                                <h1 className="text-2xl md:text-3xl text-white font-bold pt-1">Journey AI <span className='text-xs md:text-sm text-gray-500'>{'(Team Lead)'}</span></h1>
                                 <p className='text-xs md:text-sm text-gray-500'>JavaScript, React, Firebase, Gemini</p>
                                 <div className='text-white pt-3 md:pt-5 text-sm md:text-base'>
-                                    <h1>-{'>'}Create the most personalized travelling trip in a fast, convenient and smart way.</h1>
-                                    <h1>-{'>'}JourneyAI received <span className="highlight">219 users after released</span>, and it still growing.</h1>
+                                    <h1>-{'>'}Create the most <span className='highlight'>personalized travelling trip</span> in a fast, convenient and smart way.</h1>
                                 </div>
                             </div>
                         </div>

@@ -1,7 +1,7 @@
 import mlh_pic from '../pictures/MLH_pic.jpg';
 import cohere_pic from '../pictures/cohere-6.png';
 import headstarter from '../pictures/headstarterAI.png';
-
+import bbt from '../pictures/bbt.png';
 
 function Experience() {
     return (
@@ -28,15 +28,15 @@ function Experience() {
 
                     <div className='experience-item flex flex-col mt-10'>
                         <div className='image-wrapper'>
-                            <img className='experience-image scale-up-on-hover' src={headstarter} alt="Experience 3" />
+                            <img className='experience-image scale-up-on-hover' src={bbt} alt="Experience 3" />
                         </div>
                         <div className='experience-3-des flex flex-row pt-5'>
                             <div>
                                 <h1 className="text-3xl md:text-5xl font-bold">03</h1>
                             </div>
                             <div className='pl-5'>
-                                <h1 className="font-semibold">Headstarter AI</h1>
-                                <h1>2024, Software Engineer Fellow</h1>
+                                <h1 className="font-semibold">Breakthrough Tech AI UCLA</h1>
+                                <h1>2024, AI/Machine Learning Fellow</h1>
                             </div>
                         </div>
                     </div>
@@ -53,7 +53,7 @@ function Experience() {
                     </div>
                     <div className='pl-5'>
                         <h1 className="font-semibold">Cohere Commerce</h1>
-                        <h1>2024, AI/ Machine Learning Fellow</h1>
+                        <h1>2024, AI/Machine Learning Fellow - Partner with Breakthrough Tech Program</h1>
                     </div>
                     </div>
                 </div>
