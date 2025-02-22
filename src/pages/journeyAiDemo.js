@@ -23,7 +23,7 @@ function JourneyAIDemo() {
                     </div>
                     <h1>-{'> '}View on <span className="highlight hover:text-blue-500 hover:underline transition duration-300"><a href="https://github.com/dnhan1707/journey-ai-product-version" target="_blank" rel="noopener noreferrer">github</a></span></h1>
                     <h1>-{'> '}Is it live? Yes, it is. Click <span className="highlight hover:text-blue-500 hover:underline transition duration-300"><a href="https://journey-ai.dev" target="_blank" rel="noopener noreferrer">here</a></span></h1>
-                    <h1 className="pb-5">-{'> '}Try the <span className="highlight">demo</span> below here, start with the Login</h1>
+                    <h1 className="pb-5">-{'> '}Try the <span className="highlight">demo</span> below here, simply follow and click on the Blue circle</h1>
                     <div className="px-4 md:px-20 py-20 rounded-lg" style={{ position: 'relative', paddingBottom: 'calc(50.520833333333336% + 41px)', height: 0, width: '100%' }}>
                         <iframe 
                         src="https://demo.arcade.software/DO2sZhwhZyAYVOR20v0Q?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true" 
@@ -58,8 +58,8 @@ function JourneyAIDemo() {
                                 Users
                             </div>
                             <p className='pt-5'>
-                                219 is a <span className='highlight'>small</span> number but it is a <span className='highlight'>big</span> milestone for me. 
-                                It is the number of users who have used the JourneyAI platform.
+                                <span className='highlight'>337</span> may be a <span className='highlight'>small</span> number but it is a <span className='highlight'>big</span> milestone for me. 
+                                It is the motivation that makes me keep building impactful products. 
                             </p>
                         </div>
                     </div>

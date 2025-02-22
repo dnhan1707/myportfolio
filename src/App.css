@@ -82,11 +82,44 @@ html {
   font-style: italic;
 }
 
+
+/* Animation classes */
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+/* Enhance existing highlight class */
 .highlight {
-  color: #DA70D6; /* Electric purple */
-  font-family: 'Lora', serif; /* Elegant, refined font */
-  font-size: 1.6em; /* Larger to show importance */
+  color: #DA70D6;
+  font-family: 'Lora', serif;
   font-style: italic;
+  font-size: 1.6em; /* Larger to show importance */
+  transition: color 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #DA70D6;
+  transition: width 0.3s ease;
+}
+
+.highlight:hover::after {
+  width: 100%;
 }
 
 /* Custom Scrollbar */

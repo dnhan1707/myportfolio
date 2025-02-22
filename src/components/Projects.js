@@ -1,70 +1,136 @@
 import { Link } from 'react-router-dom';
 import journeyAi from '../pictures/journeyAi.png';
 import taskflowAi from '../pictures/taskflowAi.png';
-import diagarrow from '../pictures/diag-arrow.svg';
-
+import codingPlatform from '../pictures/codingPlatform.png'
+import heartDiseaseProj from '../pictures/heartDiseaseProj.png';
+import { FaArrowRight } from 'react-icons/fa'; // Add this import
+import '../project.css'
 function Projects() {
     return (
-        <div className='project w-screen bg-black p-4 md:p-20 flex flex-col md:flex-row justify-between border-t border-t-slate-300 fade-in'>
-            <div className='w-full md:w-1/2 md:pr-10 mb-10 md:mb-0'>
-                <div className='h-full'>
-                    <div className='experience-item flex flex-col mb-5'>
-                        <div className='image-wrapper'>
-                            <div className='flex flex-row'>
-                                <img src={diagarrow} alt="Arrow" className="w-4 md:w-auto"></img>
-                                <a 
-                                    className='text-white text-sm md:text-base hover:text-blue-500 hover:underline transition duration-300' 
-                                    href='https://www.journey-ai.dev/'
-                                >
-                                    Try it now!
+        <div className='min-h-screen bg-black p-8 md:p-16'>
+            <h1 className="name text-6xl md:text-9xl text-white font-bold pb-8 md:pb-14 fade-in-up">Projects</h1>
+            
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+                <Link to="/codingPlatform">
+                    <div className='group project-card p-6 border border-gray-800 rounded-lg hover:border-gray-600 transition-all cursor-pointer relative'>
+                        <div className='aspect-w-16 aspect-h-9 mb-4'> {/* Add fixed aspect ratio container */}
+                            <img className='w-full h-full rounded-lg object-cover' 
+                                 src={codingPlatform} 
+                                 alt="Real-time Multiplayer Coding Platform" />
+                        </div>
+                        <div className='space-y-4'>
+                            <div className='flex items-center justify-between'>
+                                <h2 className="text-2xl text-white font-bold">Real-time Multiplayer Coding Platform</h2>
+                                <FaArrowRight className='text-gray-600 group-hover:text-white transition-colors' />
+                            </div>
+                            <p className='text-gray-400 text-sm'>TypeScript, NextJs, Node.js, Express.js, PostgreSQL, WebSocket, Sequelize, Judge0</p>
+                            <p className='text-white text-lg'>* Engage in thrilling coding challenges with multiple players in real-time.</p>
+                            <div className='flex space-x-4'>
+                                <a href='https://github.com/dnhan1707/multiplayer-leetcode-platform' 
+                                   className='text-blue-400 hover:text-blue-300 flex items-center'
+                                   onClick={(e) => e.stopPropagation()}>
+                                    <span>View on Github</span>
                                 </a>
                             </div>
-
-                            <Link to="/journeyai#journeyai-intro-section">
-                                <img className='experience-image scale-up-on-hover pt-2 w-full' src={journeyAi} alt="Experience 1"></img>
-                            </Link>
                         </div>
-                        <div className='experience-3-des flex flex-row pt-5'>
-                            <div className='pl-2 md:pl-5'>
-                                <h1 className="text-2xl md:text-3xl text-white font-bold pt-1">Journey AI <span className='text-xs md:text-sm text-gray-500'>{'(Team Lead)'}</span></h1>
-                                <p className='text-xs md:text-sm text-gray-500'>JavaScript, React, Firebase, Gemini</p>
-                                <div className='text-white pt-3 md:pt-5 text-sm md:text-base'>
-                                    <h1>-{'>'}Create the most <span className='highlight'>personalized travelling trip</span> in a fast, convenient and smart way.</h1>
+                    </div>
+                </Link>
+
+                {/* Journey AI Project */}
+                <Link to="/journeyai#journeyai-intro-section">
+                    <div className='group project-card p-6 border border-gray-800 rounded-lg hover:border-gray-600 transition-all cursor-pointer relative'>
+                    <div className='aspect-w-16 aspect-h-9 mb-4'> {/* Add fixed aspect ratio container */}
+                            <img className='w-full h-full rounded-lg object-cover' 
+                                 src={journeyAi} 
+                                 alt="Journey AI" />
+                        </div>
+                        <div className='space-y-4'>
+                            <div className='flex items-center justify-between object-cover'>
+                                <h2 className="text-2xl text-white font-bold">Journey AI</h2>
+                                <FaArrowRight className='text-gray-600 group-hover:text-white transition-colors' />
+                            </div>
+                            <p className='text-gray-400 text-sm'>JavaScript, React, Node.js, Express.js, Firebase, Gemini</p>
+                            <p className='text-white text-lg'>* Plan personalized travel adventures quickly, conveniently, and intelligently.</p>
+                            <p className='text-white text-lg'>* Join over <span className='highlight'>350 users</span> and counting.</p>
+
+                            <div className='flex flex-row gap-4'>
+                                <div className='flex space-x-4'>
+                                    <a href='https://www.journey-ai.dev/' 
+                                    className='text-blue-400 hover:text-blue-300 flex items-center'
+                                    onClick={(e) => e.stopPropagation()}>
+                                        <span>Try it now</span>
+                                    </a>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div className='w-full md:w-1/2 md:pl-10'>
-                <div className='h-full'>
-                    <h1 className="name text-6xl md:text-9xl text-white font-bold pb-8 md:pb-14 fade-in-up">Projects</h1>
-                    <div className='project-item flex flex-col mb-5'>
-                        <div className='flex flex-row'>
-                            <img src={diagarrow} alt="Arrow" className="w-4 md:w-auto"></img>
-                            <a 
-                                className='text-white text-sm md:text-base hover:text-blue-500 hover:underline transition duration-300' 
-                                href='https://github.com/dnhan1707/taskbreaker'
-                            >
-                                View on Github
-                            </a>
+                                <div className='flex space-x-4'>
+                                    <a href='https://github.com/dnhan1707/journey-ai' 
+                                    className='text-blue-400 hover:text-blue-300 flex items-center'
+                                    onClick={(e) => e.stopPropagation()}>
+                                        <span>View on Github</span>
+                                    </a>
+                                </div>
+
+                            </div>
+
                         </div>
-                        <div className='image-wrapper pt-2'>
-                            <img className='experience-image scale-up-on-hover w-full' src={taskflowAi} alt="Experience 1"></img>
+                    </div>
+                </Link>
+
+                {/* TaskFlow AI Project */}
+                <Link to="/taskflow">
+                    <div className='group project-card p-6 border border-gray-800 rounded-lg hover:border-gray-600 transition-all cursor-pointer relative'>
+                        <div className='aspect-w-16 aspect-h-9 mb-4'> {/* Add fixed aspect ratio container */}
+                            <img className='w-full h-full rounded-lg object-cover' 
+                                 src={taskflowAi} 
+                                 alt="TaskflowAI" />
                         </div>
-                        <div className='project-1-des flex flex-row pt-5'>
-                            <div className='pl-2 md:pl-5'>
-                                <h1 className="text-2xl md:text-3xl text-white font-bold pt-1">TaskFlow AI <span className='text-xs md:text-sm text-gray-500'>{'(Cerebrals Beach Hackathon)'}</span></h1>
-                                <p className='text-xs md:text-sm text-gray-500'>JavaScript, React, Firebase, GPT-4</p>
-                                <h1 className='pt-3 md:pt-5 text-sm md:text-base text-white'>-{'>'}TaskFlow AI is an innovative <span className='highlight'>task management application</span> designed to streamline project workflows and enhance team collaboration.</h1>
+                        <div className='space-y-4'>
+                            <div className='flex items-center justify-between'>
+                                <h2 className="text-2xl text-white font-bold">TaskFlow AI</h2>
+                                <FaArrowRight className='text-gray-600 group-hover:text-white transition-colors' />
+                            </div>
+                            <p className='text-gray-400 text-sm'>JavaScript, React, Node.js, Express.js, Firebase, GPT-4</p>
+                            <p className='text-white text-lg'>* Revolutionize your project workflows with our intelligent task management app.</p>
+                            <div className='flex space-x-4'>
+                                <a href='https://github.com/dnhan1707/taskbreaker' 
+                                   className='text-blue-400 hover:text-blue-300 flex items-center'
+                                   onClick={(e) => e.stopPropagation()}>
+                                    <span>View on Github</span>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </div>
+                </Link>
+
+
+                <Link to="/heartDiseaseProj">
+                    <div className='group project-card p-6 border border-gray-800 rounded-lg hover:border-gray-600 transition-all cursor-pointer relative'>
+                        <div className='aspect-w-16 aspect-h-9 mb-4'> {/* Add fixed aspect ratio container */}
+                            <img className='w-full h-full rounded-lg object-cover' 
+                                 src={heartDiseaseProj} 
+                                 alt="Heart Disease Project" />
+                        </div>
+                        <div className='space-y-4'>
+                            <div className='flex items-center justify-between'>
+                                <h2 className="text-2xl text-white font-bold">Heart Disease Detection</h2>
+                                <FaArrowRight className='text-gray-600 group-hover:text-white transition-colors' />
+                            </div>
+                            <p className='text-gray-400 text-sm'>Python, Tensorflow, Flask, AWS Lambda, Scikit-learn, Numby, Pandas.</p>
+                            <p className='text-white text-lg'>* Heart Disease Detection Model: Achieving 92% accuracy in identifying risk factors for early intervention and improved patient outcomes.
+                            </p>
+                            <div className='flex space-x-4'>
+                                <a href='https://github.com/dnhan1707/heart_disease_prediction_proj' 
+                                   className='text-blue-400 hover:text-blue-300 flex items-center'
+                                   onClick={(e) => e.stopPropagation()}>
+                                    <span>View on Github</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </Link>
             </div>
         </div>
     )
 }
 
-export default Projects;    
+export default Projects;

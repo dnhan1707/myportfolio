@@ -1,38 +1,69 @@
 import my_setup from '../pictures/my_setup.png';
+import me from '../pictures/me.jpg';
 import '../App.css';
-
 
 function Intro(){
     return (
-        <div className='intro-page bg-black w-full h-screen text-white px-6 md:px-20 pt-10 pb-0 flex flex-col md:flex-row fade-in'>
-          
-            {/* Name and Image */}
-            <div className='name-and-pic w-full md:w-2/3'>
-                <div className='name text-5xl md:text-9xl font-bold pb-7 md:pb-14 fade-in-up italic'>
-                    <h1>NHAN</h1>
-                    <h1>TRI DANH</h1>
-                </div>
-                <div className='pic'>
-                    <img src={my_setup} className='fade-in-image scale-up-on-hover' alt="My Setup"/>
-                </div>
-            </div>
+        <div className='min-h-screen bg-black overflow-hidden'>
+            {/* Background gradient */}
+            <div className='absolute inset-0 bg-gradient-to-br from-gray-900 to-black'></div>
+            
+            <div className='relative z-10 container mx-auto px-6 py-12 md:py-20'>
+                <div className='flex flex-col md:flex-row items-center md:items-start gap-12 md:gap-20'>
+                    {/* Left Section - Name and Image */}
+                    <div className='w-full md:w-7/12'>
+                        <div className='space-y-2 mb-12'>
+                            <h1 className='name text-4xl md:text-7xl lg:text-9xl font-bold text-white italic tracking-tighter fade-in-up'>
+                                NHAN
+                            </h1>
+                            <h1 className='name text-4xl md:text-7xl lg:text-9xl font-bold text-white italic tracking-tighter fade-in-up delay-100'>
+                                TRI DANH
+                            </h1>
+                        </div>
+                        
+                        <div className='relative'>
+                            <div className='aspect-w-4 aspect-h-5 rounded-lg overflow-hidden'>
+                                <img 
+                                    src={my_setup} 
+                                    className='w-full h-full object-cover transform transition-transform duration-700 hover:scale-105' 
+                                    alt="Nhan Tri Danh"
+                                />
+                            </div>
+                            {/* Decorative elements */}
+                            <div className='absolute -bottom-4 -right-4 w-24 h-24 border-2 border-purple-500 rounded-lg opacity-50'></div>
+                            <div className='absolute -top-4 -left-4 w-24 h-24 border-2 border-purple-500 rounded-lg opacity-50'></div>
+                        </div>
+                    </div>
 
-            {/* Title and Description */}
-            <div className='small-des text-lg md:text-xl w-full md:w-1/3 flex flex-col justify-center p-5 md:p-10 slide-in-left'>
-                <div className='title pb-5 md:pb-13'>
-                <h1 className='font-bold'>Software Engineer</h1>
-                </div>
-                <div className='des pt-10 md:pt-20'>
-                <h1>
-                    Turning <span className="highlight">ideas</span> into reality, 
-                    crafting code with <span className="highlight">precision</span>, 
-                    and transforming complex problems into 
-                    <span className="highlight"> elegant solutions</span> for years.
-                </h1>
+                    {/* Right Section - Title and Description */}
+                    <div className='w-full md:w-5/12 md:mt-32'>
+                        <div className='space-y-8'>
+                            <h2 className='text-2xl md:text-3xl font-bold text-white tracking-wide slide-in-left'>
+                                Software Engineer
+                            </h2>
+                            <div className='text-lg md:text-xl text-gray-300 leading-relaxed slide-in-left delay-200'>
+                                <p>
+                                    Turning <span className="highlight">ideas</span> into reality,
+                                    crafting code with <span className="highlight">precision</span>,
+                                    and transforming complex problems into 
+                                    <span className="highlight"> elegant solutions</span> for years.
+                                </p>
+                            </div>
+                            
+                            {/* Social Links */}
+                            <div className='flex gap-6 text-gray-400 slide-in-left delay-300'>
+                                <a href="https://github.com/yourusername" className="hover:text-white transition-colors">
+                                    GitHub
+                                </a>
+                                <a href="https://linkedin.com/in/yourusername" className="hover:text-white transition-colors">
+                                    LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     )
 }
-
 export default Intro;
