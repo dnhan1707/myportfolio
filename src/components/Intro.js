@@ -52,11 +52,14 @@ function Intro(){
                             
                             {/* Social Links */}
                             <div className='flex gap-6 text-gray-400 slide-in-left delay-300'>
-                                <a href="https://github.com/yourusername" className="hover:text-white transition-colors">
+                                <a href="https://github.com/dnhan1707" className="hover:text-white transition-colors">
                                     GitHub
                                 </a>
-                                <a href="https://linkedin.com/in/yourusername" className="hover:text-white transition-colors">
+                                <a href="https://www.linkedin.com/in/nhan-tri-danh-29b922223/" className="hover:text-white transition-colors">
                                     LinkedIn
+                                </a>
+                                <a href="https://drive.google.com/file/d/1QDDSNtnPkTQHFtGZI5iuLrRrY_Z0shvO/view?usp=sharing" className="hover:text-white transition-colors">
+                                    Resume
                                 </a>
                             </div>
                         </div>
