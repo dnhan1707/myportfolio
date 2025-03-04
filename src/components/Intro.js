@@ -1,5 +1,4 @@
 import my_setup from '../pictures/my_setup.png';
-import me from '../pictures/me.jpg';
 import '../App.css';
 
 function Intro(){

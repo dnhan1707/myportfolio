@@ -51,7 +51,7 @@ function Projects() {
                             </div>
                             <p className='text-gray-400 text-sm'>JavaScript, React, Node.js, Express.js, Firebase, Gemini</p>
                             <p className='text-white text-lg'>* Plan personalized travel adventures quickly, conveniently, and intelligently.</p>
-                            <p className='text-white text-lg'>* Join over <span className='highlight'>350 users</span> and counting.</p>
+                            <p className='text-white text-lg'>* Join over <span className='highlight'>337 users</span> and counting.</p>
 
                             <div className='flex flex-row gap-4'>
                                 <div className='flex space-x-4'>
