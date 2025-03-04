@@ -142,7 +142,7 @@ function Projects() {
                                 <h2 className="text-2xl text-white font-bold">Heart Disease Detection</h2>
                                 <FaArrowRight className='text-gray-600 group-hover:text-white transition-colors' />
                             </div>
-                            <p className='text-gray-400 text-sm'>Python, Tensorflow, Flask, AWS Lambda, Scikit-learn, Numby, Pandas.</p>
+                            <p className='text-gray-400 text-sm'>Python, Scikit-learn, Numby, Pandas.</p>
                             <p className='text-white text-lg'>* Heart Disease Detection Model: Achieving 92% accuracy in identifying risk factors for early intervention and improved patient outcomes.
                             </p>
                             <div className='flex space-x-4'>
