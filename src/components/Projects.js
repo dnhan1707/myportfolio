@@ -12,7 +12,7 @@ function Projects() {
             <h1 className="name text-6xl md:text-9xl text-white font-bold pb-8 md:pb-14 fade-in-up">Projects</h1>
             
             <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
-                <Link to="/realtimecodingproject">
+                <Link to="/realtimecodingproject#realtimecoding-intro-section">
                     <div className='group project-card p-6 border border-gray-800 rounded-lg hover:border-gray-600 transition-all cursor-pointer relative'>
                         <div className='aspect-w-16 aspect-h-9 mb-4'> {/* Add fixed aspect ratio container */}
                             <img className='w-full h-full rounded-lg object-cover' 
@@ -78,7 +78,7 @@ function Projects() {
                 </Link>
 
                 {/* TaskFlow AI Project */}
-                <Link to="/voiceaiassistant">
+                <Link to="/voiceaiassistant#voiceassistant-intro-section">
                     <div className='group project-card p-6 border border-gray-800 rounded-lg hover:border-gray-600 transition-all cursor-pointer relative'>
                         <div className='aspect-w-16 aspect-h-9 mb-4'> {/* Add fixed aspect ratio container */}
                             <img className='w-full h-full rounded-lg object-cover' 
@@ -104,7 +104,7 @@ function Projects() {
                 </Link>
 
                 {/* TaskFlow AI Project */}
-                <Link to="/taskflow">
+                <Link to="/taskflow#taskflow-intro-section">
                     <div className='group project-card p-6 border border-gray-800 rounded-lg hover:border-gray-600 transition-all cursor-pointer relative'>
                         <div className='aspect-w-16 aspect-h-9 mb-4'> {/* Add fixed aspect ratio container */}
                             <img className='w-full h-full rounded-lg object-cover' 

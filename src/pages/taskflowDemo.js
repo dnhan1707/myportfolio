@@ -20,7 +20,7 @@ function TaskflowDemo() {
     return (
         <div className="w-full bg-black text-white">
             {/* Hero Section */}
-            <section id="journeyai-intro-section" className="max-w-6xl mx-auto px-4 py-20 md:px-8">
+            <section id="taskflow-intro-section" className="max-w-6xl mx-auto px-4 py-20 md:px-8">
                 <div className="name text-5xl md:text-9xl font-bold pb-7 md:pb-14 fade-in-up italic">
                     <h1>Task<span className="text-purple-400">flow</span></h1>
                 </div>
