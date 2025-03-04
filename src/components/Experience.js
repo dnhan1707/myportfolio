@@ -29,19 +29,19 @@ function Experience() {
                                     <div className="experience-item">
                                         <span className="inline-block w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
                                         <span className="text-gray-300 text-base">
-                                            Developed and deployed a computer vision model using Python, TensorFlow and OpenCV to identify various skin diseases with 85% accuracy, enhancing diagnostic tools in healthcare applications.                                        
+                                            Developed a computer vision model using Python, TensorFlow, and OpenCV, achieving 85% accuracy in skin disease classification, enhancing AI-driven diagnostics.                                        
                                         </span>
                                     </div>
                                     <div className="experience-item">
                                         <span className="inline-block w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
                                         <span className="text-gray-300 text-base">
-                                            Engineered a RESTful API integration with the company's Node.js backend systems, resulting in a 30% reduction in data processing time and supporting real-time analytics for over 10,000 daily transactions.                                        
+                                            Optimized ML pipelines by implementing data preprocessing and feature extraction, reducing inference time by 30% for real-time healthcare applications.                                        
                                         </span>
                                     </div>
                                     <div className="experience-item">
                                         <span className="inline-block w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
                                         <span className="text-gray-300 text-base">
-                                            Collaborated with cross-functional teams using Git, Jira, and Agile methodologies to refine algorithms based on user feedback, leading to a 25% increase in user engagement and contributing to a $250K revenue boost within the first six months.                                        
+                                            Analyzed large-scale medical image datasets, fine-tuning hyperparameters to improve model precision, recall, and F1-score, increasing predictive reliability by 25%.                                        
                                         </span>
                                     </div>
                                 </div>
@@ -69,19 +69,19 @@ function Experience() {
                                     <div className="experience-item">
                                         <span className="inline-block w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
                                         <span className="text-gray-300 text-base">
-                                            Enhanced React Native project with team of 10, reducing bugs by 40% through code reviews and CI/CD optimization
+                                            Collaborated with a team of 10 developers to enhance the React Native open-source project, leveraging TypeScript, JavaScript, and Agile methodologies to achieve a 40% reduction in reported bugs through code reviews, debugging sessions, and CI/CD pipeline optimization using GitHub Actions.
                                         </span>
                                     </div>
                                     <div className="experience-item">
                                         <span className="inline-block w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
                                         <span className="text-gray-300 text-base">
-                                            Implemented 3 new features using Redux and React Hooks, increasing GitHub engagement by 25%
+                                            Spearheaded the design and implementation of three new features using Redux and React Hooks, improving the user experience and contributing to a 25% increase in GitHub engagement.
                                         </span>
                                     </div>
                                     <div className="experience-item">
                                         <span className="inline-block w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
                                         <span className="text-gray-300 text-base">
-                                            Optimized performance by 30% through Flipper profiling and memory management
+                                            Resolved over 50 critical issues in the React Native codebase, optimizing performance by 30% through effective memory management, and asynchronous programming techniques.
                                         </span>
                                     </div>
                                 </div>

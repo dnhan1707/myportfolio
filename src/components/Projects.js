@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import journeyAi from '../pictures/journeyAi.png';
 import taskflowAi from '../pictures/taskflowAi.png';
+import voiceAiAssistant from '../pictures/voiceAiAssistantPics/voiceAiCalendar.png';
 import codingPlatform from '../pictures/codingPlatform.png'
 import heartDiseaseProj from '../pictures/heartDiseaseProj.png';
 import { FaArrowRight } from 'react-icons/fa'; // Add this import
@@ -11,7 +12,7 @@ function Projects() {
             <h1 className="name text-6xl md:text-9xl text-white font-bold pb-8 md:pb-14 fade-in-up">Projects</h1>
             
             <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
-                <Link to="/codingPlatform">
+                <Link to="/realtimecodingproject">
                     <div className='group project-card p-6 border border-gray-800 rounded-lg hover:border-gray-600 transition-all cursor-pointer relative'>
                         <div className='aspect-w-16 aspect-h-9 mb-4'> {/* Add fixed aspect ratio container */}
                             <img className='w-full h-full rounded-lg object-cover' 
@@ -72,6 +73,32 @@ function Projects() {
 
                             </div>
 
+                        </div>
+                    </div>
+                </Link>
+
+                {/* TaskFlow AI Project */}
+                <Link to="/voiceaiassistant">
+                    <div className='group project-card p-6 border border-gray-800 rounded-lg hover:border-gray-600 transition-all cursor-pointer relative'>
+                        <div className='aspect-w-16 aspect-h-9 mb-4'> {/* Add fixed aspect ratio container */}
+                            <img className='w-full h-full rounded-lg object-cover' 
+                                 src={voiceAiAssistant} 
+                                 alt="VoiceAiAssistant" />
+                        </div>
+                        <div className='space-y-4'>
+                            <div className='flex items-center justify-between'>
+                                <h2 className="text-2xl text-white font-bold">Voice AI Calendar Assistant</h2>
+                                <FaArrowRight className='text-gray-600 group-hover:text-white transition-colors' />
+                            </div>
+                            <p className='text-gray-400 text-sm'>Python, TypeScript, FastAPI, GPT-4, NLP</p>
+                            <p className='text-white text-lg'>* Help visual impared people managing schedule effortlessly with a voice-controlled AI assistant powered by GPT-4 and Google Calendar.</p>
+                            <div className='flex space-x-4'>
+                                <a href='https://github.com/dnhan1707/voice-calendar-assistant-backend' 
+                                   className='text-blue-400 hover:text-blue-300 flex items-center'
+                                   onClick={(e) => e.stopPropagation()}>
+                                    <span>View on Github</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </Link>
