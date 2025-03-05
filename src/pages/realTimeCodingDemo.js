@@ -38,7 +38,7 @@ function RealTimeCodingDemo() {
                 </div>
                 {/* Demo Container */}
                 <div className="rounded-lg overflow-hidden border border-gray-800 hover:border-purple-800 transition-all duration-500 shadow-lg transform hover:translate-y-[-4px]">
-                    <img src={pic_1}></img>
+                    <img src={pic_3}></img>
                 </div>
             </section>
 
@@ -103,7 +103,7 @@ function RealTimeCodingDemo() {
                             </div>
                             <div className="w-full md:w-3/5 order-1 md:order-2">
                                 <img 
-                                    src={pic_3} 
+                                    src={pic_4} 
                                     className="fade-in-image scale-up-on-hover w-full h-full object-cover" 
                                     alt="Project development"
                                 />
@@ -116,7 +116,7 @@ function RealTimeCodingDemo() {
                         <div className="flex flex-col md:flex-row">
                             <div className="w-full md:w-3/5">
                                 <img 
-                                    src={pic_4} 
+                                    src={pic_1} 
                                     className="fade-in-image scale-up-on-hover w-full h-full object-cover" 
                                     alt="Project technologies"
                                 />
