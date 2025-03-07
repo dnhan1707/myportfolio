@@ -14,7 +14,7 @@ function Experience() {
                     <div className='relative z-10 flex flex-col space-y-8'>
                         <div className='flex justify-between items-center'>
                             <span className='text-gray-400 text-lg md:text-xl font-light'>05 / 2024 - Current</span>
-                            <FaArrowRight className='text-gray-600 group-hover:text-white transition-all transform group-hover:translate-x-2' />
+                            {/* <FaArrowRight className='text-gray-600 group-hover:text-white transition-all transform group-hover:translate-x-2' /> */}
                         </div>
                         <div className='flex flex-col md:flex-row md:items-center md:space-x-12'>
                             <img 
@@ -54,7 +54,7 @@ function Experience() {
                     <div className='relative z-10 flex flex-col space-y-8'>
                         <div className='flex justify-between items-center'>
                             <span className='text-gray-400 text-lg md:text-xl font-light'>09 / 2024 - 12 / 2024</span>
-                            <FaArrowRight className='text-gray-600 group-hover:text-white transition-all transform group-hover:translate-x-2' />
+                            {/* <FaArrowRight className='text-gray-600 group-hover:text-white transition-all transform group-hover:translate-x-2' /> */}
                         </div>
                         <div className='flex flex-col md:flex-row md:items-center md:space-x-12'>
                             <img 
