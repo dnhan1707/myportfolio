@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import GoBackButton from '../components/GoBackButton';
 import user_count from '../pictures/user_count.png';
 import pic_1 from '../pictures/journeyAi1.png';
 import pic_2 from '../pictures/journeyAi2.png';
@@ -18,6 +19,7 @@ function JourneyAIDemo() {
 
     return (
         <div className="w-full bg-black text-white">
+            <GoBackButton></GoBackButton>
             {/* Hero Section */}
             <section id="journeyai-intro-section" className="max-w-6xl mx-auto px-4 py-20 md:px-8">
                 <div className="name text-5xl md:text-9xl font-bold pb-7 md:pb-14 fade-in-up italic">

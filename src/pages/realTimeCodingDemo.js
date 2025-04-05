@@ -5,6 +5,7 @@ import pic_3 from '../pictures/realtimeCodingPics/realtimeCoding3.png';
 import pic_4 from '../pictures/realtimeCodingPics/realtimeCoding4.jpg';
 
 import { FaGithub, FaArrowRight } from 'react-icons/fa';
+import GoBackButton from '../components/GoBackButton';
 
 function RealTimeCodingDemo() {
     useEffect(() => {
@@ -19,6 +20,7 @@ function RealTimeCodingDemo() {
 
     return (
         <div className="w-full bg-black text-white">
+            <GoBackButton/>
             {/* Hero Section */}
             <section id="realtimecoding-intro-section" className="max-w-6xl mx-auto px-4 py-20 md:px-8">
                 <div className="name text-2xl md:text-9xl font-bold pb-7 md:pb-14 fade-in-up italic">
