@@ -5,6 +5,7 @@ import JourneyAIDemo from "./pages/journeyAiDemo";
 import TaskflowDemo from "./pages/taskflowDemo";
 import RealTimeCodingDemo from "./pages/realTimeCodingDemo";
 import VoiceAiAssistant from "./pages/voiceAssistantDemo";
+import KelSelYay from "./pages/kelSelYay";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
           <Route path="/taskflow" element={<TaskflowDemo/>} />
           <Route path="/realtimecodingproject" element={<RealTimeCodingDemo/>} />
           <Route path="/voiceaiassistant" element={<VoiceAiAssistant/>} />
+          <Route path="/kelselyay" element={<KelSelYay/>} />
 
         </Routes>
       </BrowserRouter>

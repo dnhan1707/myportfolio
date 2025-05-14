@@ -1,6 +1,6 @@
 import mlh_pic from '../pictures/MLH_pic.jpg';
 import bbt from '../pictures/bbt.png';
-import { FaArrowRight } from 'react-icons/fa';
+// import { FaArrowRight } from 'react-icons/fa';
 
 function Experience() {
     return (
@@ -29,19 +29,25 @@ function Experience() {
                                     <div className="experience-item">
                                         <span className="inline-block w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
                                         <span className="text-gray-300 text-base">
-                                            Developed a computer vision model using Python, TensorFlow, and OpenCV, achieving 85% accuracy in skin disease classification, enhancing AI-driven diagnostics.                                        
+                                            Built a CNN-based skin disease classifier for 20K+ dermatology images, improving precision from 68% to 85%.                                     
                                         </span>
                                     </div>
                                     <div className="experience-item">
                                         <span className="inline-block w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
                                         <span className="text-gray-300 text-base">
-                                            Optimized ML pipelines by implementing data preprocessing and feature extraction, reducing inference time by 30% for real-time healthcare applications.                                        
+                                            Applied transfer learning, object-oriented preprocessing, and data augmentation for clinical robustness.                                       
                                         </span>
                                     </div>
                                     <div className="experience-item">
                                         <span className="inline-block w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
                                         <span className="text-gray-300 text-base">
-                                            Analyzed large-scale medical image datasets, fine-tuning hyperparameters to improve model precision, recall, and F1-score, increasing predictive reliability by 25%.                                        
+                                            Leveraged Python libraries including TensorFlow, OpenCV, Scikit-learn, NumPy, Pandas, Matplotlib, and Seaborn.                                      
+                                        </span>
+                                    </div>
+                                        <div className="experience-item">
+                                        <span className="inline-block w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
+                                        <span className="text-gray-300 text-base">
+                                            Presented research findings to healthcare mentors, emphasizing model ethics and medical applicability.                                  
                                         </span>
                                     </div>
                                 </div>
@@ -69,19 +75,25 @@ function Experience() {
                                     <div className="experience-item">
                                         <span className="inline-block w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
                                         <span className="text-gray-300 text-base">
-                                            Collaborated with a team of 10 developers to enhance the React Native open-source project, leveraging TypeScript, JavaScript, and Agile methodologies to achieve a 40% reduction in reported bugs through code reviews, debugging sessions, and CI/CD pipeline optimization using GitHub Actions.
+                                            Optimized the React Native Accessibility API using Kotlin, Java, and Objective-C, reducing bug measurement by 10%.
                                         </span>
                                     </div>
                                     <div className="experience-item">
                                         <span className="inline-block w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
                                         <span className="text-gray-300 text-base">
-                                            Spearheaded the design and implementation of three new features using Redux and React Hooks, improving the user experience and contributing to a 25% increase in GitHub engagement.
+                                            Maintained the consistency of KeyboardAvoidingView Core Component across iOS and Android.
                                         </span>
                                     </div>
                                     <div className="experience-item">
                                         <span className="inline-block w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
                                         <span className="text-gray-300 text-base">
-                                            Resolved over 50 critical issues in the React Native codebase, optimizing performance by 30% through effective memory management, and asynchronous programming techniques.
+                                            Increased test coverage by 20% through integration and unit tests with JUnit and automated validation.
+                                        </span>
+                                    </div>
+                                                                        <div className="experience-item">
+                                        <span className="inline-block w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
+                                        <span className="text-gray-300 text-base">
+                                            Collaborated with 4 Agile DevOps teams in SAFe, increasing sprint velocity by 15%.
                                         </span>
                                     </div>
                                 </div>

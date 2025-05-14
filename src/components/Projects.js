@@ -4,6 +4,7 @@ import taskflowAi from '../pictures/taskflowAi.png';
 import voiceAiAssistant from '../pictures/voiceAiAssistantPics/voiceAiCalendar.png';
 import codingPlatform from '../pictures/codingPlatform.png'
 import heartDiseaseProj from '../pictures/heartDiseaseProj.png';
+import kelselyaypic from '../pictures/KelSelYayPics/KSY.png'
 import { FaArrowRight } from 'react-icons/fa'; // Add this import
 import '../project.css'
 function Projects() {
@@ -12,6 +13,36 @@ function Projects() {
             <h1 className="name text-6xl md:text-9xl text-white font-bold pb-8 md:pb-14 fade-in-up">Projects</h1>
             
             <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+                <Link to="/kelselyay#kelselyay-intro-section">
+                    <div className='group project-card p-6 border border-gray-800 rounded-lg hover:border-gray-600 transition-all cursor-pointer relative'>
+                        <div className='aspect-w-16 aspect-h-9 mb-4'> {/* Add fixed aspect ratio container */}
+                            <img className='w-full h-full rounded-lg object-cover' 
+                                 src={kelselyaypic} 
+                                 alt="Real-time Multiplayer Coding Platform" />
+                        </div>
+                        <div className='space-y-4'>
+                            <div className='flex items-center justify-between'>
+                                <h2 className="text-2xl text-white font-bold">KelSelYay</h2>
+                                <FaArrowRight className='text-gray-600 group-hover:text-white transition-colors' />
+                            </div>
+                            <p className='text-gray-400 text-sm'>JavaScript, NextJs, Vercel, AWS S3, Render, MongoDB</p>
+                            <p className='text-white text-lg'>* Created a crisis relief platform used by <span className='highlight'>7,000 users</span> users to report missing persons and access help.</p>
+                            <div className='flex space-x-4'>
+                                <a href='https://www.kelselyay.com/' 
+                                    className='text-blue-400 hover:text-blue-300 flex items-center'
+                                    onClick={(e) => e.stopPropagation()}>
+                                        <span>Try it now</span>
+                                </a>
+                                <a href='https://github.com/Kel-Sel-Yay-Team/kelSelYay' 
+                                   className='text-blue-400 hover:text-blue-300 flex items-center'
+                                   onClick={(e) => e.stopPropagation()}>
+                                    <span>View on Github</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </Link>
+
                 <Link to="/realtimecodingproject#realtimecoding-intro-section">
                     <div className='group project-card p-6 border border-gray-800 rounded-lg hover:border-gray-600 transition-all cursor-pointer relative'>
                         <div className='aspect-w-16 aspect-h-9 mb-4'> {/* Add fixed aspect ratio container */}

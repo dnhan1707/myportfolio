@@ -44,8 +44,7 @@ function Intro(){
                                 <p>
                                     Turning <span className="highlight">ideas</span> into reality,
                                     crafting code with <span className="highlight">precision</span>,
-                                    and transforming complex problems into 
-                                    <span className="highlight"> elegant solutions</span> for years.
+                                    and transforming complex problems into <span className="highlight">elegant solutions.</span>
                                 </p>
                             </div>
                             
@@ -57,7 +56,7 @@ function Intro(){
                                 <a href="https://www.linkedin.com/in/nhan-tri-danh-29b922223/" className="hover:text-white transition-colors">
                                     LinkedIn
                                 </a>
-                                <a href="https://drive.google.com/file/d/1QDDSNtnPkTQHFtGZI5iuLrRrY_Z0shvO/view?usp=sharing" className="hover:text-white transition-colors">
+                                <a href="https://drive.google.com/file/d/1QmaiUao8Dv8SJ3p-9WA3rvS-kOdaMt82/view?usp=sharing" className="hover:text-white transition-colors">
                                     Resume
                                 </a>
                             </div>
