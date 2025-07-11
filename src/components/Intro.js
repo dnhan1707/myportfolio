@@ -56,7 +56,7 @@ function Intro(){
                                 <a href="https://www.linkedin.com/in/nhan-tri-danh-29b922223/" className="hover:text-white transition-colors">
                                     LinkedIn
                                 </a>
-                                <a href="https://drive.google.com/file/d/1k1HTtntOphHTUeJ-1h7b-Xn5un7Nkwmx/view?usp=sharing" className="hover:text-white transition-colors">
+                                <a href="https://drive.google.com/file/d/1eI9KqIDR6hcOTIOJRrAQQ0t1QM-qmhXv/view?usp=sharing" className="hover:text-white transition-colors">
                                     Resume
                                 </a>
                             </div>
