@@ -28,23 +28,26 @@ function Experience() {
                                     <div className="experience-item">
                                         <span className="inline-block w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
                                         <span className="text-gray-300 text-base">
-Optimized the React Native Accessibility API using Kotlin, Java, and Objective-C, reducing bug measurement by 10%.                                         </span>
+Improved C++ bridge in React Native framework, resolving 150+ issues to ensure correct event propagation to
+native TalkBack screen readers, impacting millions of developers.                                         </span>
                                     </div>
                                     <div className="experience-item">
                                         <span className="inline-block w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
                                         <span className="text-gray-300 text-base">
-Maintained the consistency of KeyboardAvoidingView Core Component across iOS and Android.                                        </span>
+Debugged keyboard event, handling RESTful microservices, API in Kotlin and Java, refactoring platform-specific
+logic into a single cross-platform module to reduce code duplication and improve input responsiveness.                                        </span>
                                     </div>
                                     <div className="experience-item">
                                         <span className="inline-block w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
                                         <span className="text-gray-300 text-base">
-Increased test coverage by 20% through integration and unit tests with JUnit, Jest and automated validation.                                        </span>
+Strengthened code quality by authoring a suite of unit and integration tests with Jest for JavaScript code, boosting
+automated test coverage from 90% to 95% and preventing regressions via GitHub Actions CI/CD enforcement.                                        </span>
                                     </div>
-                                                                        <div className="experience-item">
+                                                                        {/* <div className="experience-item">
                                         <span className="inline-block w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
                                         <span className="text-gray-300 text-base">
 Collaborated with 4 Agile DevOps teams in SAFe, increasing sprint velocity by 15%.                                        </span>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>
@@ -70,17 +73,20 @@ Collaborated with 4 Agile DevOps teams in SAFe, increasing sprint velocity by 15
                                     <div className="experience-item">
                                         <span className="inline-block w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
                                         <span className="text-gray-300 text-base">
-Built a CNN-based skin disease classifier for 20K+ dermatology images, improving precision from 68% to 85%.                                            </span>
+Built a ResNet-50 based skin disease classifier in TensorFlow, boosting precision from 60% to 85% on a 20K+ image dataset by leveraging transfer learning and a custom object-oriented data augmentation pipeline.</span>                               </div>
+                                    <div className="experience-item">
+                                        <span className="inline-block w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
+                                        <span className="text-gray-300 text-base">
+Optimized algorithmic bias by 30%, reducing the false negative disparity across skin tones by implementing
+stratified sampling in Pandas and performing post-hoc threshold calibration with Scikit-learn.
+                                       </span>
                                     </div>
                                     <div className="experience-item">
                                         <span className="inline-block w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
                                         <span className="text-gray-300 text-base">
-Applied transfer learning, object-oriented preprocessing, and data augmentation for clinical robustness.                                        </span>
-                                    </div>
-                                    <div className="experience-item">
-                                        <span className="inline-block w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
-                                        <span className="text-gray-300 text-base">
-Leveraged Python libraries including TensorFlow, OpenCV, Scikit-learn, NumPy, Pandas, Matplotlib, and Seaborn.                                        </span>
+Achieved a 4x throughput increase by converting the TensorFlow graph to TensorRT and applying INT8
+quantization, significantly reducing deployment costs.
+                                       </span>
                                     </div>
                                     {/* <div className="experience-item">
                                         <span className="inline-block w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
