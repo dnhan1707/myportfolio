@@ -1,151 +1,202 @@
 html, body {
   overflow-x: hidden;
+  background: #0a0a0a;
 }
 
 html {
   scroll-behavior: smooth;
 }
-/* Fade in animation */
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #e8e6e1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ----- Editorial typography ----- */
+.editorial-display {
+  font-family: 'Instrument Serif', 'Lora', Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 0.92;
+}
+
+.editorial-italic {
+  font-family: 'Instrument Serif', 'Lora', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.editorial-body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.005em;
+  line-height: 1.6;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', 'Menlo', monospace;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: #8a857a;
+}
+
+.rule {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #2a2823 20%, #2a2823 80%, transparent);
+}
+
+.rule-thin {
+  height: 1px;
+  background: #1f1d18;
+}
+
+/* Legacy classes preserved */
+.name {
+  font-family: 'Instrument Serif', 'Lora', serif;
+  font-style: italic;
+  letter-spacing: -0.02em;
+}
+
+.highlight {
+  font-family: 'Instrument Serif', 'Lora', serif;
+  font-style: italic;
+  color: #e9c46a;
+  font-size: 1.15em;
+  position: relative;
+  display: inline-block;
+  padding: 0 0.05em;
+}
+
+/* ----- Animations ----- */
 .fade-in {
   opacity: 0;
   animation: fadeIn 1.5s forwards;
 }
-
 @keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
+  to { opacity: 1; }
 }
 
-/* Fade-in up animation */
 .fade-in-up {
   opacity: 0;
   transform: translateY(30px);
-  animation: fadeInUp 1.5s forwards;
+  animation: fadeInUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
-
 @keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-/* Slide-in from left */
 .slide-in-left {
   opacity: 0;
   transform: translateX(-30px);
-  animation: slideInLeft 1.5s forwards;
+  animation: slideInLeft 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
-
 @keyframes slideInLeft {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+  to { opacity: 1; transform: translateX(0); }
 }
 
-/* Slide-in up animation */
 .slide-in-up {
   opacity: 0;
   transform: translateY(30px);
-  animation: slideInUp 1.5s forwards;
+  animation: slideInUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
-
 @keyframes slideInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-/* Scale-up on hover */
-.scale-up-on-hover {
-  transition: transform 0.3s ease;
-}
+.scale-up-on-hover { transition: transform 0.4s ease; }
+.scale-up-on-hover:hover { transform: scale(1.03); }
 
-.scale-up-on-hover:hover {
-  transform: scale(1.05);
-}
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
 
-/* Style for the main description text */
-.des h1 {
-  color: #FFFFFF; /* Standard white text */
-  font-family: 'Arial', sans-serif; /* Clean and readable */
-  font-size: 1.2em;
-  line-height: 1.6;
-}
-
-.name {
-  font-family: 'Lora', serif; /* Elegant, refined font */
-  /* font-size: 1.6em; */
-  font-style: italic;
-}
-
-
-/* Animation classes */
-.delay-100 {
-  animation-delay: 100ms;
-}
-
-.delay-200 {
-  animation-delay: 200ms;
-}
-
-.delay-300 {
-  animation-delay: 300ms;
-}
-
-/* Enhance existing highlight class */
-.highlight {
-  color: #DA70D6;
-  font-family: 'Lora', serif;
-  font-style: italic;
-  font-size: 1.6em; /* Larger to show importance */
-  transition: color 0.3s ease;
+/* ----- Marquee ----- */
+.marquee {
+  overflow: hidden;
   position: relative;
-  display: inline-block;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
 }
 
-.highlight::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #DA70D6;
-  transition: width 0.3s ease;
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 38s linear infinite;
 }
 
-.highlight:hover::after {
-  width: 100%;
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 
-::-webkit-scrollbar-track {
-  background: #1a1a1a;
-  border-radius: 10px;
-}
+/* ----- Scrollbar ----- */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: #0a0a0a; }
+::-webkit-scrollbar-thumb { background: #2a2823; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #3a3833; }
 
-::-webkit-scrollbar-thumb {
-  background: #333;
-  border-radius: 10px;
-  border: 2px solid #1a1a1a;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-  border: 1.5px solid #1a1a1a;
-}
-
-/* For Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #333 #1a1a1a;
+  scrollbar-color: #2a2823 #0a0a0a;
+}
+
+/* ----- Editorial helpers ----- */
+.dropcap::first-letter {
+  font-family: 'Instrument Serif', serif;
+  font-style: italic;
+  font-size: 4.5em;
+  float: left;
+  line-height: 0.85;
+  padding: 0.05em 0.12em 0 0;
+  color: #e9c46a;
+}
+
+.link-underline {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 2px;
+}
+.link-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform-origin: right;
+  transform: scaleX(1);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.link-underline:hover::after {
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.section-label::before {
+  content: '';
+  width: 1.5rem;
+  height: 1px;
+  background: #8a857a;
 }
