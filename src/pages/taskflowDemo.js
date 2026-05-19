@@ -40,7 +40,7 @@ function TaskflowDemo() {
                 </div>
                 {/* Demo Container */}
                 <div className="rounded-lg overflow-hidden border border-gray-800 hover:border-purple-800 transition-all duration-500 shadow-lg transform hover:translate-y-[-4px]">
-                    <img src={taskflowAi}></img>
+                    <img src={taskflowAi} alt="TaskFlow AI demo" />
                 </div>
             </section>
 
