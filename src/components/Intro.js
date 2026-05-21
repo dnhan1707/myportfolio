@@ -1,4 +1,4 @@
-import my_setup from '../pictures/my_setup.png';
+import myFace from '../pictures/myface.jpg';
 import '../App.css';
 
 function Intro() {
@@ -8,7 +8,7 @@ function Intro() {
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(233,196,106,0.06),_transparent_60%)] pointer-events-none" />
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_rgba(120,90,200,0.05),_transparent_50%)] pointer-events-none" />
 
-            <div className="relative max-w-7xl mx-auto px-6 md:px-12 pt-12 md:pt-20 pb-24">
+            <div className="relative max-w-7xl mx-auto px-6 md:px-12 pt-8 md:pt-10 pb-16 md:pb-20">
 
                 {/* Top eyebrow row */}
                 {/* <div className="flex items-center justify-between mb-12 md:mb-20 fade-in-up">
@@ -23,18 +23,27 @@ function Intro() {
                     <div className="col-span-12 md:col-span-7">
                         <p className="eyebrow mb-6 fade-in-up">Software Engineer / Builder</p>
 
-                        <h1 className="editorial-display text-white text-[16vw] md:text-[10.5vw] leading-[0.88] fade-in-up">
+                        <h1
+                            className="editorial-display text-white leading-[0.9] fade-in-up"
+                            style={{ fontSize: 'clamp(2.75rem, 8vw, 7.5rem)' }}
+                        >
                             Anyone <br />
                             can code.
                         </h1>
-                        <h1 className="editorial-italic text-[#e9c46a] text-[16vw] md:text-[10.5vw] leading-[0.88] mt-2 fade-in-up delay-100">
-                            I code
+                        <h1
+                            className="editorial-italic text-[#e9c46a] leading-[0.95] mt-3 fade-in-up delay-100"
+                            style={{ fontSize: 'clamp(2.25rem, 6.5vw, 6rem)' }}
+                        >
+                            I write code
                         </h1>
-                        <h1 className="editorial-italic text-[#e9c46a] text-[16vw] md:text-[10.5vw] leading-[0.88] -mt-2 fade-in-up delay-200">
-                            correctly.
+                        <h1
+                            className="editorial-italic text-[#e9c46a] leading-[0.95] fade-in-up delay-200"
+                            style={{ fontSize: 'clamp(2.25rem, 6.5vw, 6rem)' }}
+                        >
+                            that doesn't lie.
                         </h1>
 
-                        <div className="mt-10 md:mt-14 max-w-xl fade-in-up delay-300">
+                        <div className="mt-8 md:mt-10 max-w-xl fade-in-up delay-300">
                             <p className="editorial-body text-[#c8c5bd] text-lg md:text-xl leading-relaxed">
                                 I'm <span className="text-white">Nhan Tri Danh</span> — a software engineer
                                 who treats code like infrastructure: tested, instrumented, and built to
@@ -66,8 +75,8 @@ function Intro() {
                     <div className="col-span-12 md:col-span-5 md:pl-8">
                         <div className="relative slide-in-left delay-200">
                             <img
-                                src={my_setup}
-                                className="w-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                                src={myFace}
+                                className="w-full object-cover"
                                 alt="Nhan Tri Danh"
                             />
                             <div className="absolute -bottom-3 left-3 right-3 h-3 bg-[#e9c46a]/30 blur-md" />

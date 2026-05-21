@@ -69,7 +69,7 @@ function Contact() {
                             <img
                                 src={me}
                                 alt="Nhan Tri Danh"
-                                className="w-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                                className="w-full object-cover"
                             />
                             <div className="absolute -bottom-3 left-3 right-3 h-3 bg-[#e9c46a]/30 blur-md" />
                         </div>

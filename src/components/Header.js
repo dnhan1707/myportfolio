@@ -11,7 +11,7 @@ function Header() {
                     <a href="#projects" className="hidden md:inline editorial-body text-[#c8c5bd] hover:text-white transition-colors">Projects</a>
                     <a href="#philosophy" className="hidden md:inline editorial-body text-[#c8c5bd] hover:text-white transition-colors">Approach</a>
                     <a
-                        href="https://drive.google.com/file/d/1b6wfkapIkvwtaz5XmwHlFbAjgllZJWy0/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1vnsP1pNfWTAUfdOsLnzsUUteQSmlO-Ln/view?usp=sharing"
                         target="_blank"
                         rel="noreferrer"
                         className="mono text-xs uppercase tracking-[0.2em] text-[#8a857a] hover:text-[#e9c46a] transition-colors"

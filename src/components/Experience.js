@@ -96,7 +96,7 @@ function RoleVisual({ role }) {
                 <img
                     src={role.image}
                     alt={role.company}
-                    className="w-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                    className="w-full object-cover"
                 />
                 <div className="absolute inset-0 ring-1 ring-inset ring-[#2a2823] pointer-events-none" />
             </div>

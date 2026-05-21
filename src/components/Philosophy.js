@@ -46,13 +46,10 @@ function Philosophy() {
                     <div className="hidden md:block col-span-4" />
                     <div className="col-span-12 md:col-span-7">
                         <p className="editorial-body text-[#c8c5bd] text-xl md:text-2xl leading-relaxed dropcap">
-                            The bar for "can write code" is on the floor. Models do it. Bootcamp grads do it.
-                            What's rare — what's actually worth hiring for — is engineers who write code
-                            that doesn't lie about what it does. Code you can hand to the next person
-                            without an apology. Code that keeps working when nobody's looking.
+                            Writing code is easy. Writing software you can trust isn't.
                         </p>
                         <p className="editorial-italic text-[#e9c46a] text-2xl md:text-3xl mt-10 leading-snug">
-                            That's the bar I hold myself to.
+                            That's the work I'm here for.
                         </p>
                     </div>
                 </div>
